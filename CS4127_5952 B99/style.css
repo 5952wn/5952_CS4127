@@ -1,0 +1,153 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.8);
+    color:  white;
+    
+}
+
+
+header{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+   padding-left: 70px;
+   position: relative;
+}
+
+h1, h2, p, ul, li{
+color: white;
+}
+
+.home-button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.profile-pic {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit:cover
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover{
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    margin: 10px 0;
+}
+   
+.other-page ul{
+    flex-direction: row;
+    justify-content: center;
+}
+
+.other-page ul li{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover{
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+.character-page .character-cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    width: 150px;
+    position: relative;
+    transition: transform 0.3s;
+    padding: 10px;
+}
+
+.card img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.character-ame{
+    margin-top: 10px;
+    font-weight:bold;
+}
+
+.character-info{
+    display: none;
+    font-size: 0.9em;
+    margin-top: 8px;
+}
+
+.card:hover .character-info{
+    display: block;
+}
